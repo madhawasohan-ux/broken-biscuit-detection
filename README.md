@@ -47,7 +47,7 @@ The system follows an edge-based detection pipeline:
 ## Instructions to Run the Code
 
 ```bash
-git clone https://github.com/your-username/broken-biscuit-detection.git
+git clone https://github.com/madhawasohan-ux/broken-biscuit-detection.git
 cd broken-biscuit-detection
 pip install opencv-python numpy
 python main.py
