@@ -1,52 +1,57 @@
 # Broken Biscuit Detection using Classical Image Processing Techniques
 
+## Project Title
+Broken Biscuit Detection using Classical Image Processing
+
+---
+
 ## Problem Description
 
-This project focuses on automatically identifying whether biscuits are *intact or broken* from images.  
-Instead of manual inspection, image processing techniques are used to analyze the shape of each biscuit and make a decision.
+This project focuses on automatically identifying whether biscuits are **intact or broken** using image processing techniques.
 
-All images are processed assuming a simple background, allowing accurate detection of biscuit boundaries.
+Manual inspection is time-consuming and inconsistent. Therefore, this system analyzes biscuit images and determines their condition based on shape properties.
 
-This project uses only classical image processing (no machine learning).
+The system assumes a simple background to accurately detect biscuit boundaries.
+
+This project uses only classical image processing techniques (no machine learning).
 
 ---
 
-## Tools and Libraries
+## Tools and Libraries Used
 
-- Python 3.x
-- OS Module
+- Python 3.x  
 - OpenCV (cv2)  
 - NumPy  
+- OS Module  
 
 ---
 
-## Processing Approach
+## Image Processing Methods Used
 
 The system follows an edge-based detection pipeline:
 
 1. Convert image to grayscale  
 2. Apply Gaussian blur to reduce noise  
-3. Detect edges using Canny edge detector  
-4. Improve edges using morphological operations  
+3. Perform Canny edge detection  
+4. Use morphological operations to improve edges  
 5. Extract contours from the image  
-6. Compute shape features:
-   - Circularity (how round the biscuit is)  
-   - Solidity (how complete the shape is)  
-7. Classify each biscuit:
-   - Intact → high circularity and solidity  
-   - Broken → irregular shape  
+6. Calculate shape features:
+   - **Circularity** → measures roundness  
+   - **Solidity** → measures shape completeness  
+7. Classification:
+   - **Intact Biscuit** → High circularity and solidity  
+   - **Broken Biscuit** → Irregular shape  
 
 ---
 
 ## Instructions to Run the Code
 
-bash
-git clone https://github.com/thamiya2001/Broken-Biscuit-Detection.git
-cd biscuit-detection
+```bash
+git clone https://github.com/your-username/broken-biscuit-detection.git
+cd broken-biscuit-detection
 pip install opencv-python numpy
-python code.ipynb
-
-
+python main.py
+```
 ---
 
 ## Example Output Images
@@ -58,5 +63,5 @@ python code.ipynb
 
 ### Output
 
-![Output](output/result1.jpeg)
-![Output](output/result6.jpeg)
+![Output](output/processed_1.jpeg)
+![Output](output/processed_6.jpeg)
